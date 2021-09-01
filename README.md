@@ -9,7 +9,7 @@ function getRequest() {
         xmlHttp = new ActiveXObject('Microsoft.XMLHTTP')
     };
     return xmlHttp;
-}
+};
 function ajax(obj) {
     var url = obj.url,
         method = obj.method || 'GET',
@@ -25,10 +25,10 @@ function ajax(obj) {
             }
             callback(JSON.parse(xmlHttp.responseText));
         }
-    }
+    };
     xmlHttp.open(method, url, eval(async));
     if (method === 'POST') {
         xmlHttp.setRequestHeader('Content-type','application/x-www-form-urlencoded')
     }
     xmlHttp.send(param);
-};ajax(obj)
+};ajax(obj);
