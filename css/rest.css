@@ -1,0 +1,29 @@
+*{
+	margin: 0;
+	padding:0;
+	font-family: "微软雅黑","宋体";
+}
+ul,ol,dl,li,dt,dd{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #888888;
+}
+.clearfloat:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+img{
+	vertical-align: middle;
+}
+b,i,em,strong{
+	font-style: normal;
+}
